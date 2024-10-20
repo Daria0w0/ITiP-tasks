@@ -26,7 +26,8 @@ public class AllTask2 {
 
         // Задание 5
         double[] task5Numbers = {1.6, 0, 212.3, 34.8, 0, 27.5};
-        System.out.println("Task 5: " + Arrays.toString(task5Numbers)); // [1, 27, 34, 212]
+        int[] task5Result = compressedNums(task5Numbers); 
+        System.out.println("Task 5: " + Arrays.toString(task5Result)); // [1, 27, 34, 212]
 
         // Задание 6
         String task6CamelCase = "helloWorld";
@@ -37,12 +38,10 @@ public class AllTask2 {
         System.out.println("Task 7: " + secondBiggest(task7Numbers)); // 5
 
         // Задание 8
-        String task8Str1 = "baobab";
-        char task8Marker = 'b';
-        System.out.println("Task 8: " + localReverse(task8Str1, task8Marker)); // "baboab"
-
-        String task8Str2 = "Hello, I’m under the water, please help me";
-        System.out.println("Task 8: " + localReverse(task8Str2, 'e')); // " Hednu m’I ,oller thetaw er, plesae hem ple"
+        String input = "Hello, I’m under the water, please help me";
+        String mark = "e";
+        char marker = mark.charAt(0);
+        System.out.println("Task 8: " + localReverse(input, marker)); // " Hednu m’I ,oller thetaw er, plesae hem ple"
 
         // Задание 9
         System.out.println("Task 9: " + equal(8, 1, 8)); // 2
