@@ -104,11 +104,11 @@ public class AllTasks3 {
     }
 
     public static String rps(String p1, String p2) {       // Task 5
-        if (p1 == p2) {
+        if (p1.equals(p2)) {
             return "Tie";
         }
-        if ((p1 == "rock" && p2 == "scissors") || (p1 == "scissors" && p2 == "paper")
-                || (p1 == "paper" && p2 == "rock")) {
+        if (("rock".equals(p1) && "scissors".equals(p2)) || ("scissors".equals(p1) && "paper".equals(p2))
+                || ("paper".equals(p1) && "rock".equals(p2))) {
             return "Player 1 wins";
         } else {
             return "Player 2 wins";
